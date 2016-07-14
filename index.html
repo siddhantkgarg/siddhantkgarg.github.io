@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<script type='text/javascript'>
+		  var googletag = googletag || {};
+		  googletag.cmd = googletag.cmd || [];
+		  (function() {
+		    var gads = document.createElement('script');
+		    gads.async = true;
+		    gads.type = 'text/javascript';
+		    var useSSL = 'https:' == document.location.protocol;
+		    gads.src = (useSSL ? 'https:' : 'http:') +
+		      '//www.googletagservices.com/tag/js/gpt.js';
+		    var node = document.getElementsByTagName('script')[0];
+		    node.parentNode.insertBefore(gads, node);
+		  })();
+		</script>
+		<script type='text/javascript'>
+		  googletag.cmd.push(function() {
+		    googletag.defineSlot('/81214979/Test_01', [970, 90], 'test1').addService(googletag.pubads());
+		    googletag.defineSlot('/81214979/Test_02', [300, 250], 'test2').addService(googletag.pubads());
+		    googletag.defineSlot('/81214979/Test_03', [728, 90], 'test3').addService(googletag.pubads());
+		    googletag.defineSlot('/81214979/Test_04', [160, 600], 'test4').addService(googletag.pubads());
+		    googletag.defineSlot('/81214979/Test_05', [970, 125], 'test5').addService(googletag.pubads());
+		    googletag.pubads().enableSingleRequest();
+		    googletag.enableServices();
+		  });
+		</script>
+	</head>
+
+	<body>
+	<!-- /81214979/Test_01 -->
+	<div id='test1' style='height:90px; width:970px;'>
+	<script type='text/javascript'>
+	googletag.cmd.push(function() { googletag.display('test1'); });
+	</script>
+	</div>
+
+	<!-- /81214979/Test_02 -->
+	<div id='test2' style='height:250px; width:300px;'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('test2'); });
+		</script>
+	</div>
+
+	<!-- /81214979/Test_03 -->
+	<div id='test3' style='height:90px; width:728px;'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('test3'); });
+		</script>
+	</div>
+
+	<!-- /81214979/Test_04 -->
+	<div id='test4' style='height:600px; width:160px;'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('test4'); });
+		</script>
+	</div>
+
+	<!-- /81214979/Test_05 -->
+	<div id='test5' style='height:125px; width:970px;'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('test5'); });
+		</script>
+	</div>
+	</body>
+</html>
