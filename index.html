@@ -15,13 +15,16 @@
 		  })();
 		</script>
 		<script type='text/javascript'>
+			var fs = [];
+		  	var ls = [];
+		
 		  googletag.cmd.push(function() {
-		    googletag.defineSlot('/81214979/Test_01', [970, 90], 'test1').addService(googletag.pubads());
-		    googletag.defineSlot('/81214979/Test_02', [300, 250], 'test2').addService(googletag.pubads());
-		    googletag.defineSlot('/81214979/Test_03', [728, 90], 'test3').addService(googletag.pubads());
-		    googletag.defineSlot('/81214979/Test_04', [160, 600], 'test4').addService(googletag.pubads());
-		    googletag.defineSlot('/81214979/Test_05', [970, 125], 'test5').addService(googletag.pubads());
+		  	var ad1 = googletag.defineSlot('/81214979/Test_01', [970, 90], 'test1').addService(googletag.pubads());
+		  	var ad2 = googletag.defineSlot('/81214979/Test_02', [300, 250], 'test2').addService(googletag.pubads());
+		  	fs.push(ad1);
+		  	fs.push(ad2);
 		    googletag.pubads().enableSingleRequest();
+		    googletag.pubads().disableInitialLoad(); 
 		    googletag.enableServices();
 		  });
 		</script>
@@ -29,38 +32,50 @@
 
 	<body>
 	<!-- /81214979/Test_01 -->
-	<div id='test1' style='height:90px; width:970px;'>
-	<script type='text/javascript'>
-	googletag.cmd.push(function() { googletag.display('test1'); });
-	</script>
+	Preloading: 
+	<div id='test1' style='height:90px; width:970px; background:blue;'>
 	</div>
 
 	<!-- /81214979/Test_02 -->
-	<div id='test2' style='height:250px; width:300px;'>
-		<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('test2'); });
-		</script>
+	<div id='test2' style='height:250px; width:300px;background:yellow;'>
 	</div>
-
+	
+	<button id = 'btn-load'>Post Loading click me :</button> 
 	<!-- /81214979/Test_03 -->
-	<div id='test3' style='height:90px; width:728px;'>
-		<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('test3'); });
-		</script>
+	<div id='test3' style='height:90px; width:728px;background:red;'>
 	</div>
 
 	<!-- /81214979/Test_04 -->
-	<div id='test4' style='height:600px; width:160px;'>
-		<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('test4'); });
-		</script>
+	<div id='test4' style='height:600px; width:160px;background:black;'>
 	</div>
 
 	<!-- /81214979/Test_05 -->
-	<div id='test5' style='height:125px; width:970px;'>
-		<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('test5'); });
-		</script>
+	<div id='test5' style='height:125px; width:970px;background:green;'>
 	</div>
+
+	<!-- Calling display for first set -->
+	<script type='text/javascript'>
+	googletag.cmd.push(function() { googletag.display('test1'); googletag.display('test2'); googletag.pubads().refresh(fs);});
+
+	document.getElementById('btn-load').addEventListener('click',nextSlots);
+	function callDisplay(){
+		googletag.cmd.push(function() { googletag.display('test3'); googletag.display('test4');googletag.display('test5');googletag.pubads().refresh(ls);});
+	}
+	function nextSlots(){
+		//defining 2nd set of slots
+		googletag.cmd.push(function() {
+		  	var ad3 = googletag.defineSlot('/81214979/Test_03', [728, 90], 'test3').addService(googletag.pubads());
+    			var ad4 = googletag.defineSlot('/81214979/Test_04', [160, 600], 'test4').addService(googletag.pubads());
+    			var ad5 = googletag.defineSlot('/81214979/Test_05', [970, 125], 'test5').addService(googletag.pubads());
+		  	ls.push(ad3);
+		  	ls.push(ad4);
+		  	ls.push(ad5);
+		  });
+
+		//calling display and refresh
+		callDisplay();
+	}
+
+	</script>
 	</body>
 </html>
