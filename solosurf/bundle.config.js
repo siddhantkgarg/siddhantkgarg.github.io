@@ -2,7 +2,7 @@ module.exports = {
   bundle: {
     main: {
       scripts: [
-        './js/js/jquery.1.11.1.js',
+        './js/jquery.1.11.1.js',
         './js/bootstrap.js',
         './js/SmoothScroll.js',
         './js/nivo-lightbox.js',
