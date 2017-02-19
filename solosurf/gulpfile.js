@@ -4,6 +4,6 @@ var gulp = require('gulp'),
 gulp.task('bundle', function() {
   return gulp.src('./bundle.config.js')
     .pipe(bundle())
-    .pipe(clean("./public/dist",'*'))
-    .pipe(gulp.dest('./public/dist/'));
+    .pipe(clean("./static/dist",'*'))
+    .pipe(gulp.dest('./static/dist/'));
 });

@@ -1,15 +1,30 @@
 {
   "name": "solosurf",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp-bundle-assets": "^2.27.1",
-    "gulp-dest-clean": "^0.5.0"
-  }
+    "gulp-dest-clean": "^0.5.0",
+    "async": "^2.0.1",
+    "body-parser": "^1.15.1",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "superagent": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp-bundle-assets": "^2.27.1",
+    "gulp-dest-clean": "^0.5.0",
+    "async": "^2.0.1",
+    "body-parser": "^1.15.1",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "superagent": "^2.0.0"
+  },
+  "description": ""
 }
