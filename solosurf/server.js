@@ -25,4 +25,4 @@ app.use(express.static(path.join(__dirname,'/static/dist')));
 
 app.use(routes);
 
-http.createServer(app).listen(3000);
+http.createServer(app).listen(80);
