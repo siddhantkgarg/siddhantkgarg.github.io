@@ -23,8 +23,10 @@ function main() {
         var navHeight = $(window).height() - 500;
         if ($(window).scrollTop() > navHeight) {
             $('.navbar-default').addClass('on');
+            $('#nav-logo').show();
         } else {
             $('.navbar-default').removeClass('on');
+            $('#nav-logo').hide();
         }
     });
 
