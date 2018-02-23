@@ -75,7 +75,7 @@ hr {
 	text-align: center;
 	position: relative;
 	background: #8eb640;
-	margin: 0;
+	/*margin: 0;*/
 	margin-bottom: 40px;
 	border: 0;
 }
@@ -221,6 +221,7 @@ header .intro-text {
 }
 #about .about-text {
 	margin-left: 10px;
+	text-align: center;
 }
 #about .about-img {
 	display: inline-block;
@@ -624,4 +625,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 }
 #whatsapp{
 	background: url(../img/whatsappicon.png) no-repeat center center;
+}
+
+
+.item-img {
+  position: relative;
+  float: left;
+  display: block;
+  width: 50%;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  animation: floating 5s -1s infinite;
+}
+.item-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: 50% 100%;
+  transform: translateZ(-5rem);
+}
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+#us-logo-anim{
+		-webkit-animation: rotation 10s infinite linear;
+		width:50%;
+		height:50%;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+#us-logo-anim:hover 
+{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
+}
+
+.full-height
+{
+height:100vh;
 }
