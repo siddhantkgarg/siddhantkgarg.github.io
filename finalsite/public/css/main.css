@@ -673,7 +673,7 @@ button:focus {
 }
 
 #features .box-item .icon {
-  border: 1px solid #98A553;
+  border: 1px solid #000;
   text-align: center;
   float: left;
   -webkit-transition: all 0.2s linear;
@@ -683,7 +683,7 @@ button:focus {
 }
 
 #features .box-item .icon i {
-  color: #98A553;
+  color: #000;
   font-size: 24px;
   line-height: 60px;
   -webkit-transition: all 0.2s linear;
@@ -694,10 +694,14 @@ button:focus {
 
 #features .box-item .text {
   padding-left: 80px;
+  color:black;
 }
 
+green{
+  color:#98A553;
+}
 #features .box-item .text h4 {
-  color: #98A553;
+  color: #000;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;

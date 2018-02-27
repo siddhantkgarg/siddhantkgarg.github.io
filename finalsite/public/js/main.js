@@ -150,3 +150,35 @@
 
 }(jQuery));
 
+
+
+window.onload = function(){
+            var feed = new Instafeed({
+        get: 'user',
+    userId: 6310429440,
+    accessToken: '6310429440.2168215.8ac12c9e33ee44f7b9f7efc2707891b0',
+    target: 'instafeed',
+    template:'<div class="testimonial-item"><a href="{{link}}"><img src="{{image}}" alt="Client Testimonoal" /><div class="testimonial-text"></div></a></div>',
+    limit:7,
+    after : function(){
+      var owl = $(".touch-slider");
+    owl.owlCarousel({
+      navigation: false,
+      pagination: true,
+      slideSpeed: 1000,
+      stopOnHover: true,
+      autoPlay: true,
+      items: 3,
+      itemsDesktop : [1199,2],
+      itemsDesktopSmall: [1024, 2],
+      itemsTablet: [600, 1],
+      itemsMobile: [479, 1],
+    });
+
+    $('.touch-slider').find('.owl-prev').html('<i class="fa fa-chevron-left"></i>');
+    $('.touch-slider').find('.owl-next').html('<i class="fa fa-chevron-right"></i>');
+
+    }
+    });
+    feed.run();
+  };
