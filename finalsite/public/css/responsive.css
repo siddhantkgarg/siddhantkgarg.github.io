@@ -69,8 +69,19 @@
   .single-team {
     margin-bottom: 15px;
   }
+  .map-address{
+    text-align: center;
+  }
+  
+  #features{
+    /*padding-bottom: 0px;*/
+  } 
   .contact-us {
     margin-bottom: 30px;
+    text-align: center;
+  }
+  .contact-us p {
+    text-align: center;
   }
   .contact-us h3 {
     font-size: 28px;

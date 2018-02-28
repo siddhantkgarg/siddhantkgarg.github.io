@@ -3,7 +3,9 @@ const app = express()
 
 app.set('view engine', 'ejs');
 app.set('views', './');
-app.use('/public', express.static('public'))
+app.use('/public', express.static('public',{ maxAge: 86400000 }))
+app.use('/dist', express.static('dist',{ maxAge: 86400000 }))
+
 
 var nodemailer = require('nodemailer');
 
@@ -17,6 +19,10 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded());
 
 app.get('/', (req, res) => res.render('index',{}));
+app.get('/public',function(req,res){
+    res.setHeader("Cache-Control", "public, max-age=2592000");
+    res.setHeader("Expires", new Date(Date.now() + 2592000000).toUTCString());
+})
 
 const transporter = nodemailer.createTransport({
 	  service: 'gmail',
@@ -33,7 +39,7 @@ app.get('/email',function(req,res){
 
 var mailOptions = {
   from: email,
-  to: 'siddhantkgarg@gmail.com',
+  to: 'urbanstraw@gmail.com',
   subject: 'Query Email from website',
   text: msg_subject
 };

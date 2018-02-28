@@ -404,7 +404,7 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(../img/hero-area.jpg) fixed no-repeat;
+  background: url(//dist/img/hero-area.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -568,7 +568,7 @@ button:focus {
   }
   .navbar-brand {
     position: absolute;
-    padding: 15px;
+    /*padding: 15px;*/
     top: 0;
   }
   .navbar-brand img {
@@ -643,7 +643,7 @@ button:focus {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(../img/bg1.jpg) fixed no-repeat;
+  background: url(//dist/img/bg1.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -940,7 +940,7 @@ green{
  10. Counter Section Style
  ========================================================================== */
 .counters {
-  background: url(../img/counter.jpg) fixed;
+  background: url(//dist/img/counter.jpg) fixed;
   position: relative;
 }
 
@@ -974,11 +974,12 @@ green{
 11. Testimonial Section Style
  ========================================================================== */
 #testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  background: url(//dist/img/testimonial-bg.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
   position: relative;
+  padding-bottom:0px;
 
 }
 
@@ -1187,8 +1188,19 @@ green{
 .contact-us h3 {
   font-size: 36px;
   margin-bottom: 45px;
+  /*text-align: center;*/
 }
 
+/*@media (min-width: 768px) and (max-width: 991px) {
+  .contact-us{
+      text-align: center;
+    }
+  .contact-us{
+    text-align: center;
+  }
+
+}
+*/
 .contact-us p span {
   color: #98A553;
   padding-left: 10px;
@@ -1279,8 +1291,14 @@ footer {
 .copyright p a:hover {
   color: #98A553;
 }
+#msgSubmitSuccess{
+  color:#fff;
+}
+#contactFormSuccess{
+  display : none;
+  text-align: center;
+}
 
-.map-address{
-  width:200px;
-  heigth:200px;
+#resetcontactform{
+  cursor:pointer;
 }
