@@ -39,7 +39,7 @@ app.get('/email',function(req,res){
 
 var mailOptions = {
   from: email,
-  to: 'urbanstraw@gmail.com',
+  to: 'urban.straw@gmail.com',
   subject: 'Query Email from website',
   text: msg_subject
 };
@@ -56,5 +56,5 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(80, () => console.log('Example app listening on port 3000!'))
 
