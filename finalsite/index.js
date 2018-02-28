@@ -19,9 +19,12 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded());
 
 app.get('/', (req, res) => res.render('index',{}));
+
+//TODO : Add timestamp to gulp and change here for differenct versions.
 app.get('/public',function(req,res){
-    res.setHeader("Cache-Control", "public, max-age=2592000");
-    res.setHeader("Expires", new Date(Date.now() + 2592000000).toUTCString());
+    res.setHeader("Cache-Control", "public, max-age=14400");
+    res.setHeader("Expires", new Date(Date.now() + 14400000).toUTCString());
+
 })
 
 const transporter = nodemailer.createTransport({

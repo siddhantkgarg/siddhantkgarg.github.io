@@ -19,25 +19,27 @@ gulp.task("css",function(){
 })
 
 
+
 //script paths
-var jsFiles = ["public/js/jquery-min.js","public/js/popper.min.js",
+var jsFiles = ["public/js/jquery-min.js",
+"public/js/popper.min.js",
 "public/js/bootstrap.min.js",
 "public/js/jquery.mixitup.js",
 "public/js/nivo-lightbox.js",
-"public/js/owl.carousel.js",,
-"public/js/jquery.stellar.min.js",,
-"public/js/jquery.nav.js",,
-"public/js/scrolling-nav.js",,
-"public/js/jquery.easing.min.js",,
-"public/js/smoothscroll.js",,
-"public/js/jquery.slicknav.js",, 
-"public/js/wow.js",   
+"public/js/owl.carouse.ljs",,,
+"public/js/jquery.stellar.min.js",,,
+"public/js/jquery.nav.js",,,
+"public/js/scrolling-nav.js",,,
+"public/js/jquery.easing.min.js",,,
+"public/js/smoothscroll.js",,,
+"public/js/jquery.slicknav.js",,, 
+"public/js/wow.js",, 
 "public/js/jquery.vide.js",
-"public/js/jquery.counterup.min.js",,
-"public/js/jquery.magnific-popup.min.js",,
-"public/js/waypoints.min.js",,
+"public/js/jquery.counterup.min.js",,,
+"public/js/jquery.magnific-popup.min.js",,,
+"public/js/waypoints.min.js",,,
 "public/js/form-validator.min.js",
-"public/js/contact-form- .js",   
+"public/js/contact-form-script.js",, 
 "public/js/main.js",
 "public/js/instafeed.min.js"];
     jsDest = 'dist/scripts';
