@@ -18,7 +18,7 @@
     -2.5 SCROLL TO UP
   3. HERO AREA 
   4. NAVBAR
-  5. SERVICES SECTION
+  5. vision SECTION
   6. FEATURES SECTION
   7. VIDEO PROMO SECTION
   8. PORTFOLIO SECTION
@@ -404,7 +404,7 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(http://www.urbanstraw.com/dist/img/hero-area.jpg) fixed no-repeat;
+  background: url(/dist/img/hero-area.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -595,7 +595,7 @@ button:focus {
 }
 
 /* ==========================================================================
-  5. Services section
+  5. vision section
    ========================================================================== */
 .item-boxes {
   text-align: center;
@@ -643,7 +643,7 @@ button:focus {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(http://www.urbanstraw.com/dist/img/bg1.jpg) fixed no-repeat;
+  background: url(/dist/img/bg1.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -940,7 +940,7 @@ green{
  10. Counter Section Style
  ========================================================================== */
 .counters {
-  background: url(http://www.urbanstraw.com/dist/img/counter.jpg) fixed;
+  background: url(/dist/img/counter.jpg) fixed;
   position: relative;
 }
 
@@ -974,7 +974,7 @@ green{
 11. Testimonial Section Style
  ========================================================================== */
 #testimonial {
-  background: url(http://www.urbanstraw.com/dist/img/testimonial-bg.jpg) fixed no-repeat;
+  background: url(/dist/img/testimonial-bg.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
