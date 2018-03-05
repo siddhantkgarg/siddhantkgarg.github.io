@@ -30,6 +30,10 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .img-fulid{
+    position: relative;
+    top: -72px;
+  }
 }
 
 /* mobile or only mobile */
@@ -91,5 +95,9 @@
   }
   .copyright {
     float: left;
+  }
+  .img-fulid{
+    position: relative !important;
+    top: -72px !important;
   }
 }
