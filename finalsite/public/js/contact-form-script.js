@@ -1,4 +1,4 @@
-$("#contactForm").validator().on("submit", function (event) {
+$("#contactForm").validator().on("submit", function(event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
@@ -10,38 +10,44 @@ $("#contactForm").validator().on("submit", function (event) {
     }
 });
 
-$("#resetcontactform").on("click",function(event){
+$("#resetcontactform").on("click", function(event) {
     $("#contactFormSuccess").hide();
     $("#contactForm").show();
     $("#contactForm")[0].reset();
 });
 
-function submitForm(){
+function submitForm() {
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
+    var post_data = {
+        "name": name,
+        "email": email,
+        'msg_subject': msg_subject,
+        "message": message
+    };
     $.ajax({
-        type: "GET",
+        type: "POST",
         url: "/email",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
+        data: post_data,
+        success: function(text) {
+            if (text == "success") {
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false, text);
             }
         },
-        error: function(text){
+        error: function(text) {
             formError();
-            submitMSG(false,"Something went wrong! Don't forget, you can raise query on WhatsApp too.")
+            submitMSG(false, "Something went wrong! Don't forget, you can raise query on WhatsApp too.")
         }
     });
 }
 
-function formSuccess(){
+function formSuccess() {
     $("#contactForm")[0].reset();
     $("#contactForm").hide();
     submitMSG(true, "Yay! Sit back and relax while we go through your email.");
@@ -49,20 +55,20 @@ function formSuccess(){
 
 }
 
-function formError(){
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $(this).removeClass();
     });
 }
 
-function submitMSG(valid, msg){
-    if(valid){
+function submitMSG(valid, msg) {
+    if (valid) {
         var msgClasses = "h3 text-center tada animated";
     } else {
         var msgClasses = "h3 text-center text-danger";
     }
-    if(valid===true){
+    if (valid === true) {
         $("#msgSubmitSuccess").removeClass().addClass(msgClasses).text(msg);
-    }else
+    } else
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
