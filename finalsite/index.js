@@ -18,6 +18,31 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 app.use(express.json()); // to support JSON-encoded bodies
 app.use(express.urlencoded());
 
+
+var sm = require('sitemap');
+
+var sitemap = sm.createSitemap({
+    hostname: 'http://urbanstraw.com',
+    cacheTime: 600000, // 600 sec - cache purge period 
+    urls: [
+        { url: '/', changefreq: 'daily', priority: 1 }
+    ]
+});
+
+app.get('/sitemap.xml', function(req, res) {
+    sitemap.toXML(function(err, xml) {
+        if (err) {
+            return res.status(500).end();
+        }
+        res.header('Content-Type', 'application/xml');
+        res.send(xml);
+    });
+});
+
+
+
+
+
 app.get('/', (req, res) => res.render('index', {}));
 
 //TODO : Add timestamp to gulp and change here for differenct versions.
@@ -26,6 +51,8 @@ app.get('/public', function(req, res) {
     res.setHeader("Expires", new Date(Date.now() + 14400000).toUTCString());
 
 })
+
+
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -58,4 +85,4 @@ app.post('/email', function(req, res) {
 });
 
 
-app.listen(80, () => console.log('Example app listening on port 3000!'))
+app.listen(80, () => console.log('Example app listening on port 80!'))
