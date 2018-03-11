@@ -4,10 +4,8 @@ var minifyCSS = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
-var utils = require('utils/utils');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
-
 
 gulp.task("css", function() {
     return gulp.src('public/css/*.css')
