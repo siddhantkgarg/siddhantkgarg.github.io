@@ -91,4 +91,4 @@ app.post('/email', function(req, res) {
 });
 
 
-app.listen(8001, () => console.log('Example app listening on port 80!'))
+app.listen(80, () => console.log('Example app listening on port 80!'))

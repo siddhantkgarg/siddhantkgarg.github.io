@@ -17,6 +17,16 @@ gulp.task("css", function() {
 })
 
 
+gulp.task("farmcss", function() {
+    return gulp.src('public/css/farm/*.css')
+        .pipe(minifyCSS())
+        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
+        .pipe(concat('farm.min.css'))
+        .pipe(gulp.dest('dist/css'));
+
+})
+
+
 
 //script paths
 var jsFiles = ["public/js/jquery-min.js",
