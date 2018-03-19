@@ -45,6 +45,12 @@ app.get('/sitemap.xml', function(req, res) {
 
 app.get('/', (req, res) => res.render('index', {}));
 
+
+app.get('/farm/nisarg', (req, res) => res.render('farms/nisarg', {}));
+
+
+app.get('/farm/udbhavam', (req, res) => res.render('farms/udbhavam', {}));
+
 //TODO : Add timestamp to gulp and change here for differenct versions.
 app.get('/public', function(req, res) {
     res.setHeader("Cache-Control", "public, max-age=14400");
@@ -85,4 +91,4 @@ app.post('/email', function(req, res) {
 });
 
 
-app.listen(80, () => console.log('Example app listening on port 80!'))
+app.listen(8001, () => console.log('Example app listening on port 80!'))
