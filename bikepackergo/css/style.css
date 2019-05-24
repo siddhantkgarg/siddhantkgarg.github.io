@@ -1162,3 +1162,7 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .overlap-left {
       margin-left: 0px; } }
+.img-fluid{
+  width:100% !important;
+  max-height:200px !important;
+}
