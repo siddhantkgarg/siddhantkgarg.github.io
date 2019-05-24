@@ -8,6 +8,23 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
+	// $('a').click(function(event){
+	// 	console.log("Hello");
+	// 	console.log(event);
+	// })
+	
+  
+		// Add smooth scrolling to all links
+		$('a').click( function(event) {
+			console.log(event);
+			//$('#destination').scrollTop(300);
+			$(document.body).animate({
+				'scrollTop':   $('#destination').offset().top
+			}, 2000);
+				// $('html, body').animate({
+				// 	 $("#destination").scrollTop(300//)offset().top
+				// }, 800)
+				});
 	
 
 	var siteMenuClone = function() {
@@ -89,6 +106,7 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
+	
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
