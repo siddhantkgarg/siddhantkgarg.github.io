@@ -2,8 +2,8 @@
 
 
 const cards =  [
-  { title: 'sid', audiosrc: '../audio/sid-audio.mp3',bottom:'0px',text:"1"},
-  { title: 'harsh', audiosrc: '../audio/harsh-audio.mp3',bottom:'0px',text:"2"}
+  { title: 'sid', audiosrc: '/audio-wave/audio/sid-audio.mp3',bottom:'0px',text:"1"},
+  { title: 'harsh', audiosrc: '/audio-wave/audio/harsh-audio.mp3',bottom:'0px',text:"2"}
 ];
 
 new Vue({
@@ -34,7 +34,7 @@ new Vue({
         waveColor: 'violet',
         progressColor: 'purple'
     });
-    msg.wavesurfer.load('../audio/'+msg.audiosrc);
+    msg.wavesurfer.load(msg.audiosrc);
     waveIdMap[msg.title] = msg.wavesurfer;
     // var p = document.getElementById(msg.title+'-play-btn');
     // p.setAttribute('wave-ref',msg.wavesurfer);
