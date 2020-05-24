@@ -28,8 +28,8 @@
             <div class="our-team-main">
               <div class="team-front" v-bind:style="{bottom: computedBottom(index)}" >
                 <div v-bind:id="card.title" ></div>
-                <button  @click="playSelected(card.title)">play/Pause</button>
-                <input  placeholder="Guess! And press enter" v-bind:name="card.title" @keyup.enter="verifyGuessedName(card.title,$event.target,index)"  /> 
+                <img src = "./play-pause.png" class="play-pause-button" @click="playSelected(card.title)"/>
+                <input type="text" placeholder="Guess! And press enter" v-bind:name="card.title" @keyup.enter="verifyGuessedName(card.title,$event.target,index)"  /> 
               </div>
               <div class="team-back">
                 <span>
