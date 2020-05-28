@@ -14,8 +14,7 @@ const cards =  [
   { title: 'Supriya', audiosrc: '/audio-wave/audio/Supriya',bottom:'0px',text:"aleesha's Personalized Message / A clue to something"},
   { title: 'Vaishali', audiosrc: '/audio-wave/audio/Vaishali.aac',bottom:'0px',text:"vishnupriya's Personalized Message / A clue to something"},
   { title: 'Vandana', audiosrc: '/audio-wave/audio/Vandana',bottom:'0px',text:"vishnupriya's Personalized Message / A clue to something"},
-  
-
+{ title: 'Apurva', audiosrc: '/audio-wave/audio/apurva',bottom:'0px',text:"vishnupriya's Personalized Message / A clue to something"}
   
 ];
 
