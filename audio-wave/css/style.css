@@ -25,7 +25,7 @@ h1
 	margin-bottom:28px;
 }
 
- 
+
 .play-pause-button img{
 	width:50px;
 }
@@ -39,9 +39,9 @@ h1
 } 
 
 .tg-img{
-	/* height:100% !important;
-	width:100% !important; */
-	border-radius: 5px !important;	
+	height: max-content !important;
+	border-radius: 2px !important;
+	width:100% !important	;
 
 }
 
@@ -57,7 +57,7 @@ h1
 	margin-bottom:0;
 }
 
-.team-back
+.team-back div
 {
 	width:100%;
 	height:auto;
