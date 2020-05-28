@@ -6,17 +6,6 @@
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <style>
-    .vignette {
-      max-width: 60px;
-      max-height: 60px;
-      margin-right: 4%;
-    }
-
-    #app {
-      margin-top: 50px
-    }
-  </style>
 </head>
 
 <body>
@@ -29,12 +18,12 @@
               <div class="team-front" v-bind:style="{bottom: computedBottom(index)}" >
                 <div v-bind:id="card.title" ></div>
                 <img src = "./play-pause.png" class="play-pause-button" @click="playSelected(card.title)"/>
-                <input type="text" placeholder="Guess! And press enter" v-bind:name="card.title" @keyup.enter="verifyGuessedName(card.title,$event.target,index)"  /> 
+              <input type="text" placeholder="Guess! And press enter" v-bind:name="card.title" @keyup.enter="verifyGuessedName(card.title,$event.target,index)"  /> 
               </div>
               <div class="team-back">
-                <span>
-                    {{card.text}}
-                </span>
+                <div>
+                  <img class = "tg-img" :src="card.text" v-bind:alt="card.text">
+                </div>
               </div>
             </div>
           </div>
@@ -46,7 +35,7 @@
   </div>
 
 
-  
+  <div id="hidden" style="display:none;"></div>
 
   <script src="https://unpkg.com/wavesurfer.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
