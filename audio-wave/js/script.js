@@ -21,6 +21,7 @@ const cards =  [
   {title:"Kirti", audiosrc: '/audio-wave/audio/kirti.m4a',bottom:'0px',text:"Do you expect a gift? :P" ,"img":false},
   {title:"nishamam", audiosrc: '/audio-wave/audio/nishamam.ogg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/nisha-mam.jfif"},
   {title:"ankur", audiosrc: '/audio-wave/audio/ankur.ogg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/ankur.jpeg"},
+  {title:"soni", audiosrc: '/audio-wave/audio/soni.ogg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/soni.jpeg"},
   {title:"Sid", audiosrc: '/audio-wave/audio/Sid.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/sid.jpg"}
   
 
