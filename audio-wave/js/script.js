@@ -2,18 +2,18 @@
 
 
 const cards =  [
-  { title: 'Aleesha', audiosrc: '/audio-wave/audio/Aleesha',bottom:'0px',text:"/audio-wave/static/img/dummy.webp" },
-  { title: 'Bhuvana', audiosrc: '/audio-wave/audio/Bhuvana.mp3',bottom:'0px',text:"harsh's Personalized Message / A clue to something"},
-  { title: 'Ipshita', audiosrc: '/audio-wave/audio/Ipshita.m4a',bottom:'0px',text:"deepanjali's Personalized Message / A clue to something"},
-  { title: 'Lilesh', audiosrc: '/audio-wave/audio/Lilesh.mpeg',bottom:'0px',text:"soni's Personalized Message / A clue to something"},
-  { title: 'Ojas', audiosrc: '/audio-wave/audio/Ojas_',bottom:'0px',text:"Sid's Personalized Message / A clue to something"},
-  { title: 'Priyanka', audiosrc: '/audio-wave/audio/Priyanka',bottom:'0px',text:"priyanka's Personalized Message / A clue to something"},
-  { title: 'Rishabh', audiosrc: '/audio-wave/audio/Rishabh.m4a',bottom:'0px',text:"dd's Personalized Message / A clue to something"},
-  { title: 'Roshni', audiosrc: '/audio-wave/audio/Roshni.mp3',bottom:'0px',text:"shamna's Personalized Message / A clue to something"},
-  { title: 'Shamna', audiosrc: '/audio-wave/audio/Shamna.m4a',bottom:'0px',text:"rahul's Personalized Message / A clue to something"},
-  { title: 'Supriya', audiosrc: '/audio-wave/audio/Supriya',bottom:'0px',text:"aleesha's Personalized Message / A clue to something"},
-  { title: 'Vaishali', audiosrc: '/audio-wave/audio/Vaishali.aac',bottom:'0px',text:"vishnupriya's Personalized Message / A clue to something"},
-  { title: 'Vandana', audiosrc: '/audio-wave/audio/Vandana',bottom:'0px',text:"vishnupriya's Personalized Message / A clue to something"},
+  { title: 'Aleesha', audiosrc: '/audio-wave/audio/Aleesha',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Bhuvana', audiosrc: '/audio-wave/audio/Bhuvana.mp3',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Ipshita', audiosrc: '/audio-wave/audio/Ipshita.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Lilesh', audiosrc: '/audio-wave/audio/Lilesh.mpeg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Ojas', audiosrc: '/audio-wave/audio/Ojas_',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Priyanka', audiosrc: '/audio-wave/audio/Priyanka',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Rishabh', audiosrc: '/audio-wave/audio/Rishabh.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Roshni', audiosrc: '/audio-wave/audio/Roshni.mp3',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Shamna', audiosrc: '/audio-wave/audio/Shamna.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Supriya', audiosrc: '/audio-wave/audio/Supriya',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Vaishali', audiosrc: '/audio-wave/audio/Vaishali.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Vandana', audiosrc: '/audio-wave/audio/Vandana',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   
 
   

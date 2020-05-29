@@ -22,8 +22,10 @@
               </div>
               <div class="team-back">
                 <div>
-                <img class = "tg-img" :src="card.text" v-bind:alt="card.text" >
-                </div>
+                <span v-if="card.img">
+                 <img class = "tg-img" :src="card.img" v-bind:alt="card.img" > 
+                </span>
+                <span v-else>{{card.text}}</span>
               </div>
             </div>
           </div>
