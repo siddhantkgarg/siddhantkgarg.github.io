@@ -2,21 +2,23 @@
 
 
 const cards =  [
-  { title: 'Aleesha', audiosrc: '/audio-wave/audio/Aleesha',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Bhuvana', audiosrc: '/audio-wave/audio/Bhuvana.mp3',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Ipshita', audiosrc: '/audio-wave/audio/Ipshita.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Lilesh', audiosrc: '/audio-wave/audio/Lilesh.mpeg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Aleesha', audiosrc: '/audio-wave/audio/Aleesha',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/aleesha.jpg"},
+  { title: 'Lilesh', audiosrc: '/audio-wave/audio/Lilesh.mpeg',bottom:'0px',text:"Clue 1 : What's common between Floor, flour and Bake?? -- Happy birthday from Lilesh" ,"img":false},
+  { title: 'Ipshita', audiosrc: '/audio-wave/audio/Ipshita.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/iphsita.jpeg"},
+  { title: 'Priyanka', audiosrc: '/audio-wave/audio/Priyanka',bottom:'0px',text:"Clue 2 : What can give you a raise ? " ,"img":false},
   { title: 'Ojas', audiosrc: '/audio-wave/audio/Ojas_',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/ojas-pk.jpg"},
-  { title: 'Priyanka', audiosrc: '/audio-wave/audio/Priyanka',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Rishabh', audiosrc: '/audio-wave/audio/Rishabh.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Roshni', audiosrc: '/audio-wave/audio/Roshni.mp3',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Shamna', audiosrc: '/audio-wave/audio/Shamna.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Bhuvana', audiosrc: '/audio-wave/audio/Bhuvana.mp3',bottom:'0px',text:"Clue 3 : Surprise of Gurgaon!" ,"img":false},
   { title: 'Supriya', audiosrc: '/audio-wave/audio/Supriya',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/supriya.jpeg"},
+  { title: 'Rishabh', audiosrc: '/audio-wave/audio/Rishabh.m4a',bottom:'0px',text:"Clue 4 :  A fairy tale ? " ,"img":false},
+  { title: 'Shamna', audiosrc: '/audio-wave/audio/Shamna.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/shamna.jpeg"},
+  { title: 'Roshni', audiosrc: '/audio-wave/audio/Roshni.mp3',bottom:'0px',text:"Clue 5 : The one you trust has all the answers!" ,"img":false},
   { title: 'Vaishali', audiosrc: '/audio-wave/audio/Vaishali.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/vaishali.jpeg"},
-  { title: 'Vandana', audiosrc: '/audio-wave/audio/Vandana',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   { title: 'Apurva', audiosrc: '/audio-wave/audio/Apurva',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/apurva-pk.jpeg"},
-  { title: 'Vishnu', audiosrc: '/audio-wave/audio/Vishnu',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/vishnu.jpeg"},
-  { title: 'Deepa', audiosrc: '/audio-wave/audio/Deepa.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/deepa.jpeg"}
+  { title: 'Vishnu', audiosrc: '/audio-wave/audio/Vishnu',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/vishnu.jpg"},
+  { title: 'Vandana', audiosrc: '/audio-wave/audio/Vandana',bottom:'0px',text:"Ok Enough! Not all messages are clues!" ,"img":false},
+  {title: 'Deepa', audiosrc: '/audio-wave/audio/Deepa.aac',bottom:'0px',text:"Something important coming up.." ,"img":false},
+  {title:"Kirti", audiosrc: '/audio-wave/audio/kirti.m4a',bottom:'0px',text:"A trip to US ?? Ghanta!!" ,"img":false},
+  {title:"Sid", audiosrc: '/audio-wave/audio/Sid.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/sid.jpg"}
   
 
   
