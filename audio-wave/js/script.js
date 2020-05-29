@@ -6,14 +6,17 @@ const cards =  [
   { title: 'Bhuvana', audiosrc: '/audio-wave/audio/Bhuvana.mp3',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   { title: 'Ipshita', audiosrc: '/audio-wave/audio/Ipshita.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   { title: 'Lilesh', audiosrc: '/audio-wave/audio/Lilesh.mpeg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Ojas', audiosrc: '/audio-wave/audio/Ojas_',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Ojas', audiosrc: '/audio-wave/audio/Ojas_',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/ojas-pk.jpg"},
   { title: 'Priyanka', audiosrc: '/audio-wave/audio/Priyanka',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   { title: 'Rishabh', audiosrc: '/audio-wave/audio/Rishabh.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   { title: 'Roshni', audiosrc: '/audio-wave/audio/Roshni.mp3',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
   { title: 'Shamna', audiosrc: '/audio-wave/audio/Shamna.m4a',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Supriya', audiosrc: '/audio-wave/audio/Supriya',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
-  { title: 'Vaishali', audiosrc: '/audio-wave/audio/Vaishali.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Supriya', audiosrc: '/audio-wave/audio/Supriya',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/supriya.jpeg"},
+  { title: 'Vaishali', audiosrc: '/audio-wave/audio/Vaishali.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/vaishali.jpeg"},
   { title: 'Vandana', audiosrc: '/audio-wave/audio/Vandana',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/dummy.webp"},
+  { title: 'Apurva', audiosrc: '/audio-wave/audio/Apurva',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/apurva-pk.jpeg"},
+  { title: 'Vishnu', audiosrc: '/audio-wave/audio/Vishnu',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/vishnu.jpeg"},
+  { title: 'Deepa', audiosrc: '/audio-wave/audio/Deepa.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/deepa.jpeg"}
   
 
   
