@@ -17,9 +17,10 @@ const cards =  [
   { title: 'Vishnu', audiosrc: '/audio-wave/audio/Vishnu',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/vishnu.jpg"},
   {title: 'Deepa', audiosrc: '/audio-wave/audio/Deepa.aac',bottom:'0px',text:"But why the hell are you searching for clues ??" ,"img":false},
   { title: 'Apurva', audiosrc: '/audio-wave/audio/Apurva',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/apurva-pk.jpeg"},  
-  {title:"Kirti", audiosrc: '/audio-wave/audio/kirti.m4a',bottom:'0px',text:"Do you expect a gift? :P" ,"img":false},
   { title: 'Deepanjali', audiosrc: '/audio-wave/audio/deepanjali.ogg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/deepanjali.jpeg"},  
+  {title:"Kirti", audiosrc: '/audio-wave/audio/kirti.m4a',bottom:'0px',text:"Do you expect a gift? :P" ,"img":false},
   {title:"nishamam", audiosrc: '/audio-wave/audio/nishamam.ogg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/nisha-mam.jfif"},
+  {title:"ankur", audiosrc: '/audio-wave/audio/ankur.ogg',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/ankur.jpeg"},
   {title:"Sid", audiosrc: '/audio-wave/audio/Sid.aac',bottom:'0px',text:"" ,"img":"/audio-wave/static/img/sid.jpg"}
   
 
