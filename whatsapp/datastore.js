@@ -3,7 +3,7 @@ let user = {
 	id: 0,
 	name: "S!D",
 	number: "+91-9953004445",
-	pic: "images/mydp.jpg"
+	pic: "images/mydp.JPG"
 };
 
 let contactList =[ {
