@@ -1093,7 +1093,9 @@ h1, h2, h3, h4, h5,
   position: relative;
   width: 100%;
   overflow: hidden;
-  display: block; }
+  display: block; 
+  border-radius: 25px;
+}
   .unit-1:after {
     content: "";
     z-index: 1;
@@ -1136,8 +1138,11 @@ h1, h2, h3, h4, h5,
     transform: scale(1.05); }
 
 .overlap-section {
-  margin-top: -150px;
+  /* background-color: black; */
+  margin-top: -150px; 
   position: relative;
+  /* margin-left: 35%; */
+  /* align-content: center; */
   z-index: 9; }
 
 .unit-4 .unit-4-icon span {
