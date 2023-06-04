@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Siddhant & Pradeep's Wedding</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #F2D600;
+        }
+        .content {
+            padding: 50px;
+            background-color: #FFFCF9;
+        }
+        .function-card {
+            margin: 20px;
+            background-color: #FFF4E6;
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Siddhant & Pradeep's Wedding</h1>
+        <p>We are getting married and we would be honored with your presence!</p>
+    </div>
+    <div class="content">
+        <h2>Wedding Functions</h2>
+        <div id="functionsList"></div>
+    </div>
+    
+    <script>
+        const functions = [
+            {name: "Ring Ceremony", date: "Date 1", time: "Time 1", venue: "Venue 1", image: "ring-ceremony.jpg"},
+            {name: "Haldi", date: "Date 2", time: "Time 2", venue: "Venue 2", image: "haldi.jpg"},
+            {name: "Mehandi and Sangeet", date: "Date 3", time: "Time 3", venue: "Venue 3", image: "mehandi-sangeet.jpg"},
+            {name: "Anand Karaj", date: "Date 4", time: "Time 4", venue: "Venue 4", image: "anand-karaj.jpg"},
+            {name: "Varmala and Pheres", date: "Date 5", time: "Time 5", venue: "Venue 5", image: "varmala-phere.jpg"}
+        ];
+
+        let functionsList = document.getElementById('functionsList');
+        functions.forEach(func => {
+            let div = document.createElement('div');
+            div.className = 'function-card';
+            div.innerHTML = `
+                <h3>${func.name}</h3>
+                <img src="${func.image}" alt="${func.name}" style="width:100%;">
+                <p>Date: ${func.date}</p>
+                <p>Time: ${func.time}</p>
+                <p>Venue: ${func.venue}</p>
+            `;
+            functionsList.appendChild(div);
+        });
+    </script>
+</body>
+</html>
